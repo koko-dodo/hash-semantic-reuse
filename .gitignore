@@ -1,0 +1,29 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Downloaded datasets
+data/*
+!data/.gitkeep
+
+# Generated experiment artifacts
+results/*
+!results/.gitkeep
+!results/figures/
+results/figures/*
+!results/figures/.gitkeep
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
