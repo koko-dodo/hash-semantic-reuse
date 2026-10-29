@@ -8,6 +8,8 @@ class ExactHashIndex:
         self.table = {}
 
     def build_index(self, prompts):
+        """Replace the index with prompts, assigning IDs from their new order."""
+        self.table.clear()
         for prompt_id, text in enumerate(prompts):
             self.table[text] = prompt_id
 

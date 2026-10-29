@@ -33,6 +33,10 @@ class RandomHyperplaneLSH:
         return hash_key
 
     def build_index(self, embeddings):
+        """Replace all bucket entries while preserving the existing hyperplanes."""
+        for table in self.tables:
+            table.clear()
+
         for table_id in range(self.L):
             table = self.tables[table_id]
 
