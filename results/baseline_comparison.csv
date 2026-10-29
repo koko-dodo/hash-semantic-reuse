@@ -1,0 +1,4 @@
+method,mean_recall,avg_cosine_computations,mean_time_ms,median_time_ms
+Brute-force,1.0,10000.0,0.07351492999999999,0.072916
+Exact Hash Only,0.0,0.0,0.008707943,0.0085
+Hash + LSH,0.9794247178640243,37.165,0.36399966500000003,0.3617705
